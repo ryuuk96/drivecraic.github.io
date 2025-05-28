@@ -1,0 +1,42 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header.hero-section {
+    background: linear-gradient(135deg, #4CE5B1 0%, #ffffff 100%);
+    padding: 5rem 2rem;
+    text-align: center;
+    color: #000;
+  }
+  
+  .btn-download {
+    background-color: #4CE5B1;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .features, .blog-preview {
+    padding: 3rem 2rem;
+    background: #fff;
+    margin-top: 2rem;
+  }
+  
+  footer {
+    background: #222;
+    color: #eee;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  footer nav a {
+    color: #4CE5B1;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
