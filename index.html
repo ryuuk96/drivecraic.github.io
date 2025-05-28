@@ -3,37 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome App</title>
-    <link rel="stylesheet" href="style.css">
+    <title>DriveCraic - Ace Your Irish Driving Test!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CE5B1;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5em;
+        }
+
+        nav {
+            margin-top: 1em;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .app-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            margin-bottom: 2em;
+        }
+
+        .app-info h2 {
+            color: #4CE5B1;
+        }
+
+        .app-feature {
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .app-feature h3 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .play-store-button {
+            display: inline-block;
+            background-color: #4CE5B1;
+            color: white;
+            padding: 1em 2em;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1em;
+        }
+
+        .blog-section h2, .legal-section h2, .contact-section h2 {
+            color: #4CE5B1;
+            margin-top: 2em;
+            border-bottom: 2px solid #4CE5B1;
+            padding-bottom: 0.5em;
+        }
+
+        .blog-post {
+            margin-bottom: 2em;
+            padding: 1em;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+
+        .blog-post h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .legal-links a {
+            margin-right: 1em;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.75em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            background-color: #4CE5B1;
+            color: white;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Awesome App Website!</h1>
+        <h1>Welcome to DriveCraic!</h1>
+        <p>Ace your Irish driving test with confidence.</p>
         <nav>
-            <a href="/">Home</a>
-            <a href="/blog/">Blog</a>
-            <a href="/contact/">Contact</a>
+            <a href="#learners">Learner License Prep</a>
+            <a href="#novice">Novice License Prep</a>
+            <a href="#blog">Blog</a>
+            <a href="#legal">Legal</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section id="hero">
-        <h2>Discover the Power!</h2>
-        <p>My amazing Android app will change your life.</p>
-        <a href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE_NAME" target="_blank">
-            <button>Download on Google Play</button>
-        </a>
-    </section>
+    <div class="container">
+        <section id="app-overview" class="app-info">
+            <div>
+                <h2>Ace Your Learner License Theory Test</h2>
+                <p>Prepare effectively with DriveCraic's comprehensive tools:</p>
+                <ul>
+                    <li><strong>Extensive Question Bank:</strong> Nearly 900 questions covering all official categories.</li>
+                    <li><strong>Interactive Flashcards:</strong> The ideal way to learn and memorize quickly.</li>
+                    <li><strong>Categorized Questions:</strong> Study section by section for focused learning.</li>
+                    <li><strong>Realistic Mock Tests:</strong> Simulate the actual test environment to build confidence.</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Unlock Your Novice Driver's License</h2>
+                <p>Master the practical test routes with our subscription model:</p>
+                <ul>
+                    <li><strong>Test Centre Specific Routes:</strong> Access all routes for your chosen test centre.</li>
+                    <li><strong>Free Introductory Route:</strong> Get started with one free route.</li>
+                    <li><strong>Flexible Subscriptions:</strong> Choose access per test centre or go for full Ireland access.</li>
+                    <li><strong>Route Practice Tools:</strong> Save notes and track your practice sessions.</li>
+                </ul>
+                <a href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE_NAME" target="_blank" class="play-store-button">Download on Google Play</a>
+            </div>
+        </section>
 
-    <section id="blog-preview">
-        <h3>Latest Blog Posts</h3>
-        <p>Check out our insightful articles...</p>
-        <a href="/blog/">Read More</a>
-    </section>
+        <section id="blog" class="blog-section">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-post">
+                <h3>Calming Your Nerves Before the Theory Driving Test</h3>
+                <p>It's completely normal to feel a bit anxious before your theory driving test. Here are a few tips to help you stay calm and focused:</p>
+                <ul>
+                    <li><strong>Prepare Thoroughly:</strong> The best way to reduce anxiety is to feel confident in your knowledge. Use the DriveCraic app to study all the questions and take plenty of mock tests until you consistently score well.</li>
+                    <li><strong>Get a Good Night's Sleep:</strong> Being well-rested will help you think clearly and manage stress. Avoid cramming the night before.</li>
+                    <li><strong>Eat a Healthy Meal:</strong> A balanced meal before your test will provide you with energy and help you concentrate. Avoid sugary snacks that can lead to a crash.</li>
+                    <li><strong>Arrive Early:</strong> Give yourself plenty of time to get to the test centre. Rushing will only increase your anxiety.</li>
+                    <li><strong>Practice Relaxation Techniques:</strong> Deep breathing exercises or mindfulness can help calm your nerves in the moments leading up to the test.</li>
+                    <li><strong>Focus on What You Know:</strong> When you're taking the test, try to focus on the questions you do know rather than dwelling on the ones you're unsure about.</li>
+                    <li><strong>Stay Positive:</strong> Believe in your preparation. You've put in the work, and you're capable of passing.</li>
+                </ul>
+            </div>
+            <p><a href="/blog/">Read More Blog Posts</a> (This link will point to your main blog page once you have more posts)</p>
+        </section>
+
+        <section id="legal" class="legal-section">
+            <h2>Legal</h2>
+            <p class="legal-links">
+                <a href="/terms-and-conditions/">Terms and Conditions</a>
+                <a href="/privacy-policy/">Privacy Policy</a>
+            </p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Questions? Get in Touch!</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Question:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit Question</button>
+            </form>
+            <p>We'll do our best to get back to you as soon as possible.</p>
+        </section>
+    </div>
 
     <footer>
-        <p>&copy; 2025 My Awesome App</p>
+        <p>&copy; 2025 DriveCraic - Ace Your Irish Driving Test!</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
